@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+  <title>Notifications page</title>
+
+</head>
+<body>
+  <header>
+    <div class="hero-container">
+      <div class="hero-notif">
+        <h1>Notifications</h1>
+        <sup class="supNumber">3</sup>
+      </div>
+      <!-- <p>Mark all as read</p> -->
+      <button type="button" onclick="markRead()">Mark all as read</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección unread -->
+    <section class="unread-section">
+      <article class="unread-container">
+        <div class="webber">
+          <figure>
+            <img src="./assets/images/avatar-mark-webber.webp" alt="">
+          </figure>
+          <div class="webber-info">
+            <p><strong>Mark Webber</strong> reacted to your recent post <strong class="webber-strong">My first tournament today!</strong><sup class="supRed"></sup></p>
+            <span>1m ago</span>
+          </div>
+        </div>
+        <div class="a-gray">
+          <figure>
+            <img src="./assets/images/avatar-angela-gray.webp" alt="">
+          </figure>
+          <div class="a-gray-info">
+            <p><strong>Angela Gray</strong> followed you<sup class="supRed2"></sup></p>
+            <span>5m ago</span>
+          </div>
+        </div>
+        <div class="thompson">
+          <figure>
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+          </figure>
+          <div class="thompson-info">
+            <p><strong>Jacob Thompson</strong> has joined your group <strong class="thompson-strong">Chess Club</strong><sup class="supRed3"></sup></p>
+            <span>1 day ago</span>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Sección read -->
+    <section class="read-section">
+      <article class="read-container">
+        <div class="hasanuddin">
+          <figure>
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          </figure>
+          <div class="hasanuddin-info">
+            <p><strong>Rizky Hasanuddin</strong> sent you a private message</p>
+            <span>5 days ago</span>
+          </div>
+        </div>
+        <div class="hasanuddin-message">
+          <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+        </div>
+        <div class="smith">
+          <figure>
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+          </figure>
+          <div class="smith-info">
+            <p><strong>Kimberly Smith</strong> commented on your picture</p>
+            <span>1 week ago</span>
+          </div>
+          <figure>
+            <img class="img-2" src="./assets/images/image-chess.webp" alt="">
+          </figure>
+        </div>
+        <div class="peterson">
+          <figure>
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
+          </figure>
+          <div class="peterson-info">
+            <p><strong>Nathan Peterson</strong> reacted to your recent post <strong class="strong-peterson">5 end-game strategies to increase your win rate</strong></p>
+            <span>2 weeks ago</span>
+          </div>
+        </div>
+        <div class="kim">
+          <figure>
+            <img src="./assets/images/avatar-anna-kim.webp" alt="">
+          </figure>
+          <div class="kim-info">
+            <p><strong>Anna Kim</strong> left the group <strong class="strong-kim">Chess Club</strong></p>
+            <span>2 weeks ago</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
